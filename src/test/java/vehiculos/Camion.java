@@ -3,7 +3,7 @@ package vehiculos;
 public class Camion extends Vehiculo {
 	//atributos de la clase
 	private int ejes;
-	protected static int camiones = 0;
+	protected static int camiones;
 	
 	//atributos heredados
 	
@@ -21,10 +21,10 @@ public class Camion extends Vehiculo {
 		this.ejes = ejes;
 	}
 	
-	public int getCantidadCamiones() {
-		return this.camiones;
+	public static int getCantidadCamiones() {
+		return Camion.camiones;
 	}
-	public void setCantidadCamiones(int camiones) {
-		this.camiones = camiones;
+	public static void setCantidadCamiones(int camiones) {
+		Camion.camiones = camiones;
 	}
 }
