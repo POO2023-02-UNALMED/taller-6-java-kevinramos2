@@ -6,9 +6,7 @@ public class Pais {
 	private int numdeventa;
 	protected static ArrayList<Pais> paises = new ArrayList<Pais>();
 	
-	public Pais(){
-		
-	}
+	//constructor
 	public Pais(String nombre) {
 		this.nombre = nombre;
 		paises.add(this);
