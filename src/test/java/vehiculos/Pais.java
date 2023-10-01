@@ -29,7 +29,7 @@ public class Pais {
 	
 	//metodo pais mas vendedor
 	
-	public static Pais pasMasVendedor() {
+	public static Pais paisMasVendedor() {
 		int ventamayor =- 1;
 		Pais mayorpais = null;
 		for (Pais pais: paises) {
