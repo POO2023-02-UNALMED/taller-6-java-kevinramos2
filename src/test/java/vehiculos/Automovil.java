@@ -28,6 +28,13 @@ public class Automovil extends Vehiculo{
 	public void setPuestos(int puestos) {
 		this.puestos = puestos;
 	}
+	
+	public int getCantidadAutomoviles() {
+		return this.automoviles;
+	}
+	public void setCantidadAutomoviles(int automoviles) {
+		this.automoviles = automoviles;
+	}
 }
 
 
