@@ -3,7 +3,7 @@ package vehiculos;
 public class Automovil extends Vehiculo{
 	//atributos
 	private int puestos;
-	protected static int automoviles = 0;
+	protected static int automoviles;
 	
 	
 	//atributos heredados 
@@ -23,11 +23,11 @@ public class Automovil extends Vehiculo{
 		this.puestos = puestos;
 	}
 	
-	public int getCantidadAutomoviles() {
-		return this.automoviles;
+	public static int getCantidadAutomoviles() {
+		return Automovil.automoviles;
 	}
-	public void setCantidadAutomoviles(int automoviles) {
-		this.automoviles = automoviles;
+	public static void setCantidadAutomoviles(int automoviles) {
+		Automovil.automoviles = automoviles;
 	}
 }
 
