@@ -11,7 +11,20 @@ public class Vehiculo {
 	private int peso;
 	private String traccion;
 	private Fabricante fabricante;
-	private static int cantidadVehiculos = 0;
+	protected static int cantidadVehiculos = 0;
 
-
+	public Vehiculo(String placa, int puertas, int velocidadMaxima, String nombre, int precio, int peso, String traccion, Fabricante fabricante) {
+		this.placa = placa;
+		this.puertas = puertas;
+		this.velocidadMaxima = velocidadMaxima;
+		this.nombre = nombre;
+		this.precio = precio;
+		this.peso = peso;
+		this.traccion = traccion;
+		this.fabricante = fabricante;
+		Vehiculo.cantidadVehiculos += 1;
+	}
+	public Vehiculo() {
+		Vehiculo.cantidadVehiculos += 1;
+	}
 }
