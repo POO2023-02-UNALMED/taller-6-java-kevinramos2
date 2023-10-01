@@ -86,4 +86,15 @@ public class Vehiculo {
 	public void setFabricante(Fabricante fabricante) {
 		this.fabricante = fabricante;
 	}
+	
+	//metodo vehiculosportipo
+	
+	public static String vehiculosPorTipo() {
+		int cantidadAutomoviles = Automovil.automoviles;
+		int cantidadCamiones = Camion.camiones;
+		int cantidadCamionetas = Camioneta.camionetas;
+		
+		return "Automoviles: "+cantidadAutomoviles+"\nCamiones: "+cantidadCamiones+"\nCamionetas: "+cantidadCamionetas;
+	}
+	
 }
