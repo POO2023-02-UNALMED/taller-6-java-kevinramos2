@@ -12,13 +12,7 @@ public class Automovil extends Vehiculo{
 		this.puestos = puestos;
 		Automovil.automoviles += 1;
 	}
-	public Automovil() {
-		Automovil.automoviles += 1;
-	}
-	public Automovil(int puestos) {
-		this.puestos = puestos;
-		Automovil.automoviles += 1;
-	}
+
 	
 	//Set y Get
 	
