@@ -3,15 +3,12 @@ import java.util.ArrayList;
 public class Fabricante {
 	//atributos
 	private String nombre;
-	private String pais;
+	private Pais pais;
 	private int numdeventa;
 	protected static ArrayList<Fabricante> fabrilist = new ArrayList<Fabricante>();
 	
-	
-	public Fabricante() {
-		
-	}
-	public Fabricante(String nombre,String pais) {
+	//constructor 
+	public Fabricante(String nombre,Pais pais) {
 		this.nombre = nombre;
 		this.pais = pais;
 		fabrilist.add(this);
@@ -26,10 +23,10 @@ public class Fabricante {
 		this.nombre = nombre;
 	}
 	
-	public String getPais() {
+	public Pais getPais() {
 		return this.pais;
 	}
-	public void setPais(String pais) {
+	public void setPais(Pais pais) {
 		this.pais = pais;
 	}
 	
